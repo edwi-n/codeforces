@@ -55,9 +55,9 @@ if __name__ == "__main__":
                         solution_link = f"https://codeforces.com/contest/{contest_id}/submission/{submission.get('id')}"
                         problem_info.append([contest_id, problem_index, problem_name, rating, tags, solution_link])
             
-            # Sort by contest ID and problem index in REVERSE order
-            problem_info.sort(key=lambda x: (x[0] or 0, x[1] or ''), reverse=True)
-            
+            # Reverse problem submissions so that the latest submitted is at the top
+            reversed(problem_info)
+
             # Read current README
             with open('README.md', 'r') as f:
                 lines = f.readlines()
