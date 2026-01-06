@@ -1,7 +1,5 @@
 import requests
 import json
-import os
-import sys
 
 def fetch_url(url, timeout=30):
     """Fetch data from a URL and display the result"""
@@ -22,14 +20,7 @@ def fetch_url(url, timeout=30):
 
 if __name__ == "__main__":
     
-    # Get handle from environment variable
-    handle = os.getenv('CODEFORCES_HANDLE')
-    
-    if not handle:
-        print("Error: CODEFORCES_HANDLE environment variable is not set")
-        print("Usage: export CODEFORCES_HANDLE=your_username")
-        sys.exit(1)
-    
+    handle = "edwin"
     url = f"https://codeforces.com/api/user.status?handle={handle}"
         
     result = fetch_url(url, timeout=30)
@@ -56,7 +47,8 @@ if __name__ == "__main__":
                         problem_info.append([contest_id, problem_index, problem_name, rating, tags, solution_link])
             
             # Sort by contest ID and problem index in REVERSE order
-            problem_info.sort(key=lambda x: (x[0] or 0, x[1] or ''), reverse=True)
+            # problem_info.sort(key=lambda x: (x[0] or 0, x[1] or ''), reverse=True)
+            reversed(problem_info)
             
             # Read current README
             with open('README.md', 'r') as f:
@@ -73,7 +65,7 @@ if __name__ == "__main__":
                 # Keep everything up to ## Solutions
                 new_lines = lines[:solutions_idx + 1]
                 
-                # Add total count
+                # Add total count and blank line
                 new_lines.append(f"\nTotal problems solved: **{len(problem_info)}**\n\n")
                 
                 # Add table header
@@ -90,8 +82,6 @@ if __name__ == "__main__":
                 with open('README.md', 'w') as f:
                     f.writelines(new_lines)
                 
-                print(f"\nUpdated README.md with {len(problem_info)} problems")
+                print(f"\nUpdated README.md with {len(problem_info)} problems in reverse order")
             else:
                 print("Could not find ## Solutions in README.md")
-    elif result:
-        print(f"\n✓ Successfully fetched data from URL")
