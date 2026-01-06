@@ -8,10 +8,12 @@ I implemented a custom fetcher to update this readme. The documentation for the 
 
 ## Solutions
 
-Total problems solved: **489**
+Total problems solved: **491**
 
 | # | Problem Name | Rating | Tags | Solution |
 |--------|--------------|--------|------|----------|
+| 166E | Tetrahedron | 1500 | dp, math, matrices | [Link](https://codeforces.com/contest/166/submission/356689117) |
+| 1350B | Orac and Models | 1400 | dp, math, number theory | [Link](https://codeforces.com/contest/1350/submission/356680668) |
 | 1702E | Split Into Two Sets | 1600 | dfs and similar, dsu, graphs | [Link](https://codeforces.com/contest/1702/submission/356556752) |
 | 414B | Mashmokh and ACM | 1400 | combinatorics, dp, number theory | [Link](https://codeforces.com/contest/414/submission/356442766) |
 | 474D | Flowers | 1700 | dp | [Link](https://codeforces.com/contest/474/submission/356442351) |
