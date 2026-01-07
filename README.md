@@ -8,10 +8,15 @@ I implemented a custom fetcher to update this readme. The documentation for the 
 
 ## Solutions
 
-Total problems solved: **491**
+Total problems solved: **496**
 
 | # | Problem Name | Rating | Tags | Solution |
 |--------|--------------|--------|------|----------|
+| 2183D1 | Tree Coloring (Easy Version) | N/A | constructive algorithms, dfs and similar, greedy, trees | [Link](https://codeforces.com/contest/2183/submission/356850816) |
+| 2183C | War Strategy | N/A | binary search, greedy, math, two pointers | [Link](https://codeforces.com/contest/2183/submission/356828861) |
+| 2183B | Yet Another MEX Problem | N/A | constructive algorithms, greedy | [Link](https://codeforces.com/contest/2183/submission/356787238) |
+| 2183A | Binary Array Game | N/A | games | [Link](https://codeforces.com/contest/2183/submission/356774623) |
+| 1915F | Greetings | 1500 | data structures, divide and conquer, sortings | [Link](https://codeforces.com/contest/1915/submission/356753193) |
 | 166E | Tetrahedron | 1500 | dp, math, matrices | [Link](https://codeforces.com/contest/166/submission/356689117) |
 | 1350B | Orac and Models | 1400 | dp, math, number theory | [Link](https://codeforces.com/contest/1350/submission/356680668) |
 | 1702E | Split Into Two Sets | 1600 | dfs and similar, dsu, graphs | [Link](https://codeforces.com/contest/1702/submission/356556752) |
