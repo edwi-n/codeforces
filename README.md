@@ -8,10 +8,11 @@ I implemented a custom fetcher to update this readme. The documentation for the 
 
 ## Solutions
 
-Total problems solved: **496**
+Total problems solved: **497**
 
 | # | Problem Name | Rating | Tags | Solution |
 |--------|--------------|--------|------|----------|
+| 264B | Good Sequences | 1500 | dp, number theory | [Link](https://codeforces.com/contest/264/submission/357023737) |
 | 2183D1 | Tree Coloring (Easy Version) | N/A | constructive algorithms, dfs and similar, greedy, trees | [Link](https://codeforces.com/contest/2183/submission/356850816) |
 | 2183C | War Strategy | N/A | binary search, greedy, math, two pointers | [Link](https://codeforces.com/contest/2183/submission/356828861) |
 | 2183B | Yet Another MEX Problem | N/A | constructive algorithms, greedy | [Link](https://codeforces.com/contest/2183/submission/356787238) |
